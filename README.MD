@@ -57,7 +57,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 </p>
 <br>
 
-- Exemplo FINAL - Analisador cascatas de números
+- Exemplo FINAL - Analisador cascata de números
 <p>Projeto final que adicionam os números em cascata e depois analisam eles. Nesse projeto há restrições, como os números só poderem ser de 1-100, não entrarem números repetidos e também não funcionar sem valor. Além disso, a análise feita quando se clica no botão finalizar mostra o total de número cadastrados, maior e menor número inserido, a soma de todos valores e a média de todos valores</p>
 <p align="center">
   <img alt="imagem analisador em cascata de números" src="./.github/ImagemAnalisadorNumero.png" width="60%">
