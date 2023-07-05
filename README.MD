@@ -39,7 +39,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Exemplo 14 - Sistemas de idade
 <p>Sistema que cruza os "inputs" de sexo e idade</p>
 <p align="center">
-  <img alt="imagem sistemas de idade" src="./.github/ImagemVerifiIdade.png" width="60%">
+  <img alt="imagem sistemas de idade" src="./.github/ImagemVerifiIdade1.png" width="60%">
 </p>
 <br>
 
