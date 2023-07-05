@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            width: 60%;
+            height: 800px;
+            margin: 0px auto;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        header{
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            margin-top: -4px;
+            border: 1px solid black;
+        }
+
+        main{
+        }
+        .inicio{
+            float: left;
+            width: 44%;
+            height:350px;
+            margin-top: 10px;
+            margin-bottom:20px;
+            border: 1px solid black;
+            text-align: center;
+            padding: 2.5%;
+            align-items: center;
+        }
+
+        .resfim{
+            text-align: center;
+            float: right;
+            width: 44%;
+            height:350px;
+            margin-top: 10px;
+            margin-bottom:20px;
+            border: 1px solid black;
+            padding: 2.5%;
+            
+        }
+
+        footer{
+            text-align: center;
+            clear:both;
+            width:100%;
+            height:60px;
+            border: 1px solid black;
+        }
+
+        #resultado {
+            font-size: 120%;
+        }
+
+        input{
+            height: 30px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sistemas de multas</h1>
+    </header>
+
+    <main>
+        <section class="inicio">
+            <h2>Velocidade do carro(km/h): </h2>
+            <input type="number" name="txtvel" id="txtvel">
+            <input type="button" value="verificar" id="botao" onclick="verificar()">
+        </section>
+
+        <section class="resfim">
+            <div id="resultado">Sua velocidade é: </div>
+            <div id="resultado"> </div>
+        </section>
+        
+        <footer><a>Feito por Carlos Eduardo</a></footer>
+    </main>
+
+    <script>
+        function verificar(){
+            var vel = document.getElementById("txtvel")
+            velocidade = Number(vel.value)
+
+            document.getElementById("resultado").innerHTML = `Sua velocidade é: <strong>${velocidade}</strong> km/h`
+
+            if (velocidade > 60){
+                document.getElementsByTagName("div")[1].innerHTML = `Você está além do limite de velocidade, deverá receber uma multa`
+            }else{
+                document.getElementsByTagName("div")[1].innerHTML = `Você está dentro do limite de velocidade`
+            }
+        }
+        
+    </script>
+</body>
+</html>
